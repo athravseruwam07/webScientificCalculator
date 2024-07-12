@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    width: 380px; /* Adjusted width to accommodate more buttons */
+    background: #333; /* Dark background for the calculator body */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+input#display {
+    width: 100%;
+    height: 60px; /* Make the display larger for better visibility */
+    margin-bottom: 20px; /* Increased bottom margin */
+    text-align: right;
+    font-size: 24px; /* Larger font size for better readability */
+    border: none;
+    background: #000; /* Black background for the display */
+    color: #0f0; /* Green text color for the display */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners for the display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust grid for four columns to fit all buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.buttons button {
+    width: 100%;
+    height: 50px; /* Uniform button height */
+    font-size: 18px; /* Slightly larger font size */
+    border: none;
+    background-color: #444; /* Dark gray for buttons */
+    color: #fff; /* White text color */
+    border-radius: 8px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+}
+
+.buttons button:active {
+    background-color: #666; /* Even lighter gray when active */
+}
+
+/* Different colors for special buttons */
+button.special {
+    background-color: #ff9500; /* Orange background for special buttons */
+    color: #fff; /* White text color */
+}
+
+button.special:hover {
+    background-color: #ffad42; /* Lighter orange on hover */
+}
+
+button.special:active {
+    background-color: #e58e00; /* Darker orange when active */
+}
